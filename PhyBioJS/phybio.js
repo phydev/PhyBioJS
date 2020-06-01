@@ -6,8 +6,8 @@ class anArray {
         // this functions inits an array filled with zeros
         let newArray = [[]];
 
-        for (var i = 0; i<n; i++){
-            for(var j=0; j<m; j++){
+        for (var i = 0; i<m; i++){
+            for(var j=0; j<n; j++){
                 newArray[i].push(0.);
             }
             newArray.push([]);
@@ -19,8 +19,8 @@ class anArray {
         // this functions inits an array with random elements
         let newArray = [[]];
 
-        for (var i = 0; i<n; i++){
-            for(var j=0; j<m; j++){
+        for (var i = 0; i<m; i++){
+            for(var j=0; j<n; j++){
                 newArray[i].push(Math.random());
             }
             newArray.push([]);
