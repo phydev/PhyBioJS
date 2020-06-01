@@ -9,8 +9,11 @@
     <title>PhyBioJS</title>
 </head>
 <body>
-    <nav>
-        <ul class="container">
+
+    <nav role="custom-dropdown">
+            <input type="checkbox" id="button">
+            <label for="button" onclick></label>
+        <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Theory</a></li>
             <li><a href="#">References</a></li>
@@ -29,7 +32,7 @@
                                                        parseInt(document.getElementById('Lx').value),
                                                        parseInt(document.getElementById('Ly').value))">Run</button>
         </div>
-        <div id='plotDiv' class="plot center"> <h2></h2><!-- Plotly chart will be drawn inside this DIV --></div>
+        <div id='plotDiv' class="plotDiv center"><!-- Plotly chart will be drawn inside this DIV --></div>
 
 
     </main>

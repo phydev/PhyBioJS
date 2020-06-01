@@ -43,7 +43,7 @@ function runSim(tsteps, Lx, Ly){
             color: '#372549'
         },
         paper_bgcolor: "#EACDC2",
-        autosize: false,
+        autosize: true,
         width: 400,
         height: 400,
         margin: {
