@@ -1,86 +1,86 @@
 body {
-  background-color: #EACDC2;
+    font-family: 'Avenir Next', sans-serif;
+    background-color: #EACDC2;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #372549;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container li a {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#main {
+    /* border: red solid 1px; */
+    width: 800px;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+main p {
+    text-align: center;
 }
 
 h1 {
-  color: #682a7a;
-  text-align: center;
+    text-align: center;
+    color: #682a7a;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-  color: #372549;
-  text-align: center;
-}
-
-li {
-  display: inline;
-}
-
-plot {
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+#painel {
+    /* border: blue solid 1px; */
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
 }
 
 .button {
-  background-color: #372549; /* Green */
-  border: none;
-  border-radius: 12px;
-  color: white;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-}
+    background-color: #372549;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+  }
 
-.input {
-  background-color: #B75D69; /* Green */
-  border: none;
-  border-radius: 12px;
-  color: white;
-  height: 50px;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
+  .input {
+    background-color: #B75D69; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+  }
 
-}
+  #plotDiv {
+      width: 500px;
+      height: 300px;
+      border: solid 1px black;
+      align-self: center;
+      padding: 20px;
+  }
 
-
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #372549;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #774C60;
-}
+  #plotDiv h2 {
+      text-align: center;
+  }

@@ -68,14 +68,14 @@ function runSim(tsteps, Lx, Ly){
 
 function integrate(phi, tsteps, outPeriod, dt, Lx, Ly, layout){
     var nsteps = 0;
-    var niter = outPeriod;
+
 
     function allen_cahn(){
 
         let phi_o = anArray.Zeros(Lx, Ly);
-        var cnt = niter;
+        var niter = outPeriod;
 
-        while (cnt-- && nsteps<=tsteps ) {
+        while (niter-- && nsteps<=tsteps ) {
             //for (var nstep = 0; nstep <= tsteps; nstep++) {
             phi_o = phi.slice();
 
