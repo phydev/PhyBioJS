@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/phydev/PhyBioJS.svg?branch=master)](https://travis-ci.com/phydev/PhyBioJS)
+[![codecov](https://codecov.io/gh/phydev/PhyBioJS/branch/master/graph/badge.svg)](https://codecov.io/gh/phydev/PhyBioJS)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://phydev.github.io/PhyBioJS)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 # PhyBioJS
