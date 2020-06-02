@@ -31,7 +31,7 @@ class anArray {
 }
 
 
-function runSim(tsteps, Lx, Ly){
+function runSim(model, tsteps, Lx, Ly){
 
     let phi = anArray.Random(Lx, Ly);
     const dt = 0.001;
@@ -63,11 +63,12 @@ function runSim(tsteps, Lx, Ly){
     }];
     Plotly.newPlot('plotDiv', data, layout);
 
-    integrate(phi, tsteps, outPeriod, dt, Lx, Ly, layout);
+
+    integrate(model, phi, tsteps, outPeriod, dt, Lx, Ly, layout);
 
 }
 
-function integrate(phi, tsteps, outPeriod, dt, Lx, Ly, layout){
+function integrate(model, phi, tsteps, outPeriod, dt, Lx, Ly, layout){
     var nsteps = 0;
 
 
@@ -96,7 +97,41 @@ function integrate(phi, tsteps, outPeriod, dt, Lx, Ly, layout){
         }
     }
 
-    allen_cahn();
+    function cahn_hilliard(){
+
+        let phi_o = anArray.Zeros(Lx, Ly);
+        let mu = anArray.Zeros(Lx, Ly);
+        var niter = outPeriod;
+
+        while (niter-- && nsteps<=tsteps ) {
+            //for (var nstep = 0; nstep <= tsteps; nstep++) {
+            phi_o = phi.slice();
+            for (var i = 0; i < Lx; i++) {
+                for (var j = 0; j < Ly; j++) {
+                    mu[i][j] = laplacian(phi_o, i, j, Lx, Ly) + 8.0 * phi_o[i][j] * (1.0 - phi_o[i][j]) * (phi_o[i][j] - 0.5);
+                }
+            }
+
+
+            for (var i = 0; i < Lx; i++) {
+                for (var j = 0; j < Ly; j++) {
+                    phi[i][j] = phi_o[i][j] - dt * (laplacian(mu, i, j, Lx, Ly));
+                }
+            }
+            nsteps++;
+        }
+        if (nsteps <= tsteps) {
+            console.log(nsteps);
+            Plotly.animate('plotDiv',{
+                data:{z: phi},
+                type:'heatmap', colorscale: 'Electric', zsmooth: 'best'}, layout);
+            setTimeout(cahn_hilliard, 1);
+        }
+    }
+
+    eval(model);
+    //cahn_hilliard();
+    //allen_cahn();
 }
 
 

@@ -57,11 +57,46 @@ h2 {
 
 #painel {
     /* border: blue solid 1px; */
-    width: 100%;
+    width: auto;
     height: auto;
-    display: flex;
     justify-content: space-around;
     align-self: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.select {
+    background-color: #B75D69; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    height: auto;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: auto;
+
 }
 
 .button {
@@ -114,4 +149,6 @@ h2 {
   #refs {
       text-align: left;
   }
+
+
 

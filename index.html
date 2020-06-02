@@ -14,14 +14,29 @@
     <main id="main">
         <h1>PhyBioJS</h1>
 
-        <p>This is a JavaScript implementation of the phase-field model presented in Ref. [1].</p>
+        <p>This is a JavaScript implementation of phase-field models.</p>
         <div id="painel">
-                <input class="input" type="number" placeholder="Steps" id="tsteps" value="10000">
-                <input class="input" type="number" placeholder="Lx" id="Lx" value="50">
-                <input class="input" type="number" placeholder="Ly" id="Ly" value="50">
-                <button class="button" onclick="runSim(parseInt(document.getElementById('tsteps').value),
+            <div>
+                <select class="select" name="models" id="model">
+                    <option value="">Model</option>
+                    <option value="allen_cahn();">Allen-Cahn</option>
+                    <option value="cahn_hilliard();">Cahn-Hilliard</option>
+                </select>
+                    <input class="input" type="text" placeholder="Steps" id="tsteps" value="10000">
+                    <button class="button" onclick="runSim(document.getElementById('model').value,
+                                                       parseInt(document.getElementById('tsteps').value),
                                                        parseInt(document.getElementById('Lx').value),
                                                        parseInt(document.getElementById('Ly').value))">Run</button>
+
+            </div>
+            <div >
+                <input class="input" type="text" placeholder="Lx" id="Lx" value="50">
+                <input class="input" type="text" placeholder="Ly" id="Ly" value="50">
+                <div>
+
+
+                </div>
+            </div>
         </div>
         <div id='plotDiv' class="plotDiv"><h2><h2><!-- Plotly chart will be drawn inside this DIV --></div>
 
