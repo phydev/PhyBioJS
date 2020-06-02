@@ -12,5 +12,8 @@
   },
   "scripts": {
     "test": "jshint PhyBioJS/phybio.js"
+  },
+  "dependencies": {
+    "plotly.js-dist": "^1.54.1"
   }
 }

@@ -7,8 +7,8 @@ class anArray {
         let newArray = [[]];
 
         for (var i = 0; i<m; i++){
-            for(var j=0; j<n; j++){
-                newArray[i].push(0.);
+            for(var j = 0; j<n; j++){
+                newArray[i].push(0.0);
             }
             newArray.push([]);
         }
@@ -20,7 +20,7 @@ class anArray {
         let newArray = [[]];
 
         for (var i = 0; i<m; i++){
-            for(var j=0; j<n; j++){
+            for(var j = 0; j<n; j++){
                 newArray[i].push(Math.random());
             }
             newArray.push([]);
