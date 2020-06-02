@@ -1,0 +1,11 @@
+{
+  "name": "PhyBioJS",
+  "version": "1.0.0",
+  "repository": {
+    "type" : "git",
+    "github" : "phydev/PhyBioJS",
+    "url" : "https://github.com/phydev/PhyBioJS.git"},
+  "dependencies": {
+    
+  }
+}
