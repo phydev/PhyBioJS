@@ -4,6 +4,9 @@
   "esversion" : 6,
   "setTimeout" : true,
   "console" : true,
+  "browser": true,
+  "browserify": true,
+  "devel": true,
 
   "globals": {
     // AngularJS
