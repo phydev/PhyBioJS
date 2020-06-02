@@ -1,11 +1,15 @@
 {
   "name": "PhyBioJS",
   "version": "1.0.0",
+  "author": "Maurício Moreira-Soares",
   "repository": {
     "type" : "git",
     "github" : "phydev/PhyBioJS",
     "url" : "https://github.com/phydev/PhyBioJS.git"},
-  "dependencies": {
-    
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+   "scripts": {
+    "test": "jshint PhyBioJS/phybio.js"
   }
 }
