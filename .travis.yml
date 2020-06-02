@@ -3,3 +3,5 @@ node_js:
   - 14
 before_script:
   - npm install plotly.js-dist
+script:
+  - node tests/general.js
