@@ -10,10 +10,12 @@
   "devDependencies": {
     "jshint": "^2.6.0"
   },
-  "scripts": {
-    "test": "jshint tests/general.js"
-  },
+"scripts": {
+    "test": "nyc mocha",
+    "report-coverage": "nyc report --reporter=text-lcov >                coverage.lcov && codecov"
+},
   "dependencies": {
+    "nyc": "^15.1.0",
     "plotly.js-dist": "^1.54.1"
   }
 }
