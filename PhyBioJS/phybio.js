@@ -1,5 +1,6 @@
 'use strict';
 
+
 class anArray {
 
     static Zeros(m, n){
@@ -30,6 +31,7 @@ class anArray {
     }
 }
 
+module.exports = anArray;
 
 function runSim(model, tsteps, Lx, Ly){
 
