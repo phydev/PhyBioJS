@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Theory</title>
 </head>
@@ -10,6 +12,19 @@
 <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
    <main id="main">
         <h1>Theory</h1>
+
+       <p>The phase-field model is based on a free energy functional written as function of the system's order parameter \(\phi\) (that distinguishes the different phases present in the system).
+           In this formalism, the interface has a width \(\varepsilon\) and the order parameters vary continuously along its width.
+           As a consequence of that, the system evolution as a whole is described by a unique set of equations applied to every phase  of the system, without taking into account the boundary conditions at the interfaces.</p>
+      <h2>Allen-Cahn Equation</h2>
+       <p>
+           \[
+\left( \frac{\partial } { \partial t}  + \mathbf{v}_m \cdot \nabla \right) \phi_m= -\frac{\delta F}{\delta \phi_m} \, ,
+\]</p>
+       <h2>Cahn-Hilliard Equation</h2>
+       <p>\[
+\left( \frac{\partial }{\partial t} + \textbf{v}_m \cdot \nabla  \right) \phi_m = M(l_m) \nabla^2 \frac{\delta F}{\delta \phi_m} \textrm{ .}
+\]</p>
    </main>
 </body>
 </html>

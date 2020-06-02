@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Avenir Next', sans-serif;
-    background-color: #EACDC2;
+    background-color: #fff1e3;
     display: flex;
     flex-direction: column;
     width:100%;
@@ -48,6 +48,12 @@ h1 {
     color: #682a7a;
 }
 
+h2 {
+    text-align: center;
+    color: #e98789;
+    font-size: 100%;
+}
+
 #painel {
     /* border: blue solid 1px; */
     width: 100%;
@@ -86,15 +92,21 @@ h1 {
   }
 
   #plotDiv {
-      width: 100%;
+      width: auto;
       height: auto;
       border: none;
       align-self: center;
+      display: block;
+      align-content: center;
       padding: 5px;
+      margin: 20px auto;
+
   }
 
   #plotDiv h2 {
       text-align: center;
+      margin: 0 auto;
+
   }
 
 
