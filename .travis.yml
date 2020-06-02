@@ -9,4 +9,4 @@ script:
 - npm run tests/general.js
 - npm run report-coverage
 after_script:
-  - cov
+  - codecov
