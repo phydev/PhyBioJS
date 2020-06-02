@@ -4,6 +4,7 @@ node_js:
 install:
   - npm install plotly.js-dist
   - npm install mocha -g
+  - npm install nyc -g
   - npm install codecov -g
 script:
 - npm run tests/general.js
