@@ -11,8 +11,8 @@
     "jshint": "^2.6.0"
   },
 "scripts": {
-    "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov >                coverage.lcov && codecov"
+    "test": "nyc mocha tests/general.js",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
 },
   "dependencies": {
     "nyc": "^15.1.0",
