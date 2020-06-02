@@ -7,7 +7,7 @@ install:
   - npm install nyc -g
   - npm install codecov -g
 script:
-- npm run tests/general.js
+- npm run test
 - npm run report-coverage
 after_script:
   - codecov
