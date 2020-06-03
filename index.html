@@ -22,17 +22,20 @@
                     <option value="">Model</option>
                     <option value="allen_cahn();">Allen-Cahn</option>
                     <option value="cahn_hilliard();">Cahn-Hilliard</option>
+                    <option value="droplet();">Droplet</option>
                 </select>
                     <input class="input" type="text" placeholder="Steps" id="tsteps" value="10000">
                     <button class="button" onclick="runSim(document.getElementById('model').value,
                                                        parseInt(document.getElementById('tsteps').value),
                                                        parseInt(document.getElementById('Lx').value),
-                                                       parseInt(document.getElementById('Ly').value))">Run</button>
+                                                       parseInt(document.getElementById('Ly').value),
+                                                       parseInt(document.getElementById('cell_radius').value))">Run</button>
 
             </div>
             <div >
                 <input class="input" type="text" placeholder="Lx" id="Lx" value="50">
                 <input class="input" type="text" placeholder="Ly" id="Ly" value="50">
+                <input class="input" type="text" placeholder="Radius" id="cell_radius" value="6">
                 <div>
 
 

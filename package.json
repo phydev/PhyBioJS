@@ -8,14 +8,14 @@
     "url": "https://github.com/phydev/PhyBioJS.git"
   },
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "jshint": "^2.6.0",
+    "nyc": "^15.1.0"
   },
 "scripts": {
     "test": "nyc mocha tests/general.js PhyBioJS/*",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov"
 },
   "dependencies": {
-    "nyc": "^15.1.0",
     "plotly.js-dist": "^1.54.1"
   }
 }
